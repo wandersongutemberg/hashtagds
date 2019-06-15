@@ -1,0 +1,72 @@
+.cursos,
+.contribuir,
+.saibaMais {
+    margin: 1%;
+    border: 3px solid rgb(30, 100, 162);
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.cursos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(40, 55, 133);
+}
+
+.curso {
+    display: inline-block;
+    text-align: center;
+    width: 16.45%;
+}
+
+.curso a:link,
+.curso a:visited {
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: rgb(40, 55, 133)
+}
+
+.curso a:hover {
+    color: rgb(209, 92, 20);
+}
+
+.curso img {
+    width: 95%;
+    border-radius: 30%;
+    border: 3px solid rgb(209, 92, 20);
+    transition: all 0.3s;
+}
+
+.curso img:hover {
+    border-color: rgb(40, 55, 133);
+}
+
+.contribuir,
+.saibaMais {
+    font-size: 24px;
+    text-align: justify;
+    color: rgb(40, 55, 133);
+    height: 200px;
+    display: inline-block;
+}
+
+.contribuir {
+    width: 60%;
+    float: left;
+}
+
+.contribuir a,
+.saibaMais a {
+    text-decoration: none;
+    color: rgb(209, 92, 20);
+}
+
+.contribuir p,
+.saibaMais p {
+    height: 135px;
+}
+
+.saibaMais {
+    width: 36%;
+}

@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    background-color: rgba(30, 100, 162, 0.1);
+    height: 90px;
+    padding: 10px;
+}
+
+nav img {
+    text-align: center;
+    float: left;
+    height: 70px;
+}
+
+nav ul {
+    text-align: right;
+    margin: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 30px;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: rgb(40, 55, 133);
+    font-size: 24px;
+    transition: all 0.25s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: rgb(209, 92, 20)
+}
+
+nav #selecionado {
+    font-weight: 550;
+    padding: 100px 15px 15px 15px;
+    border: 3px solid rgb(209, 92, 20);
+    border-radius: 15%;
+    background-color: rgba(30, 100, 162, 0.4);
+}
+
+section {
+    margin: 5px;
+    border: 4px solid rgb(40, 55, 133);
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 450px;
+}
+
+footer {
+    height: 220px;
+    color: white;
+    background-color: rgba(30, 100, 162, 0.1);
+    padding: 1%;
+    text-align: left;
+}
+
+footer p {
+    font-size: 20px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    color: rgb(40, 55, 133)
+}
+
+footer .equipe {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+
+.equipe img {
+    width: 60%;
+    border-radius: 45%;
+    filter: brightness(0.6);
+}
+
+.equipe a:link,
+.equipe a:visited,
+.equipe abbr {
+    text-decoration: none;
+    color: rgb(40, 55, 133);
+}
+
+.equipe img,
+.equipe a:link,
+.equipe a:visited {
+    transition: all 0.2s;
+}
+
+.equipe img:hover {
+    filter: none;
+}
+
+.equipe p {
+    font-weight: initial;
+}
+
+#equipe {
+    width: 45%;
+    float: left;
+}
+
+#contatos {
+    width: 30%;
+    float: left;
+}
+
+.contatos {
+    float: left;
+    margin: 0px 10px;
+}
+
+.contatos img {
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#direitos {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#direitos img {
+    width: 100%;
+}
+
+#direitos p {
+    font-size: initial;
+    font-weight: initial;
+}
