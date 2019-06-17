@@ -43,7 +43,7 @@ nav a:hover {
 nav #selecionado {
     font-weight: 550;
     padding: 100px 15px 15px 15px;
-    border: 3px solid rgb(209, 92, 20);
+    border-bottom: 3px solid rgb(209, 92, 20);
     border-radius: 15%;
     background-color: rgba(30, 100, 162, 0.4);
 }
@@ -64,7 +64,7 @@ section {
 }
 
 footer {
-    height: 220px;
+    height: 230px;
     color: white;
     background-color: rgba(30, 100, 162, 0.1);
     padding: 1%;
@@ -85,7 +85,7 @@ footer .equipe {
 }
 
 .equipe img {
-    width: 60%;
+    width: 75%;
     border-radius: 45%;
     filter: brightness(0.6);
 }
@@ -112,16 +112,16 @@ footer .equipe {
 }
 
 #equipe {
-    width: 45%;
+    width: 40%;
     float: left;
 }
 
 #contatos {
-    width: 30%;
+    width: 20%;
     float: left;
 }
 
-.contatos {
+.contatos, .apoio {
     float: left;
     margin: 0px 10px;
 }
@@ -145,4 +145,15 @@ footer .equipe {
 #direitos p {
     font-size: initial;
     font-weight: initial;
+}
+
+#apoio {
+    float: left;
+    width: 15%;
+}
+
+.apoio img {
+    height: 100px;
+    border-radius: 20%;
+    border: solid 2px green;
 }
