@@ -1,223 +1,180 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<!--
-			                 / /	       / /
-	       		            / /		      / /
-			               / /		     / /
-			              / /		    / /
-		    ==========================================
-			==========================================
-		        	   / /			  / /
-		        	  / /			 / /
-		        	 / /			/ /
-		            / /		       / /
-	    ==========================================
-		==========================================
-			      / /		     / /
-	       	     / /		    / /
-		   	    / /            / /
-		       / /		      / /
--->
-
+<html lang="en">
 <head>
-    <title>#.NET - Digital School</title>
     <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="pt-br">
-    <meta name="author" content="Gledson Rodrigues de Oliveira Junior,Kelvin Arruda,Nawan Soares,Wanderson Gutemberg">
-    <meta name="reply-to" content="hashtagds.net@gmail.com">
-    <meta name="description" content="#.NET - Digital School">
-    <meta name="keywords" content="web,internet,curso,tecnologia">
-    <meta name="robots" content="index,follow,noarchive">
-
-    <!-- Inicio favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./imagens/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./imagens/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./imagens/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./imagens/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./imagens/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./imagens/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./imagens/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./imagens/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./imagens/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./imagens/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./imagens/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./imagens/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./imagens/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./imagens/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./imagens/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Termino favicon -->
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/padrao.css" type="text/css">
-    <link rel="stylesheet" href="./css/home.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#.NET - Digital School</title>
+    <link rel="stylesheet" href="css/resson.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
 </head>
-
 <body>
     <header>
         <nav>
-            <a href="./index.html"><img src="./imagens/pclogo.png" alt="logo"></a>
-            <ul>
-                <li><a href="./cursos/">Cursos</a></li>
-                <li><a href="./opinioes.html">Opiniões</a></li>
-                <li><a href="./quem-somos.html">Quem somos?</a></li>
-                <li><a href="./fale-conosco.html">Fale conosco</a></li>
-                <li><a href="./mapa-do-site.html">Mapa do site</a></li>
-            </ul>
+            <input type="checkbox" id="bt-menu">
+            <label for="bt-menu">&#9776;</label>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">CURSOS</a>
+                        <ul>
+                            <li><a href="#">LÓGICA DE PROGRAMAÇÃO</a></li>
+                            <li><a href="#">FUNDAMENTOS DE WEB DESIGN I</a></li>
+                            <li><a href="#">SISTEMAS OPERACIONAIS</a></li>
+                            <li><a href="#">ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES</a></li>
+                            <li><a href="#">INGLÊS INSTRUMENTAL</a></li>
+                            <li><a href="#">METODOLOGIA CIENTÍFICA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">QUEM SOMOS</a></li>
+                    <li><a href="#">FALE CONOSCO</a></li>
+                    <li><a href="#">AGRADECIMENTOS</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-
-    <section>
-        <article>
-            <div class="banner">
-                <img src="./imagens/letralogo.png" alt="banner">
-            </div>
-        </article>
-
-        <article>
-            <div class="cursos">
-                <h2>Nossos cursos:</h2>
-                <div class="curso" id="logica">
-                    <a href="./cursos/logica.html">
-                        <img src="./imagens/cursos/logica.jpg" alt="logica">
-                        <h3>Lógica de programação</h3>
-                    </a>
-                </div>
-
-                <div class="curso" id="design">
-                    <a href="./cursos/web-design.html">
-                        <img src="./imagens/cursos/webdesign.jpg" alt="web-design">
-                        <h3>Web Design</h3>
-                    </a>
-                </div>
-
-                <div class="curso" id="sistemas">
-                    <a href="./cursos/sistemas-operacionais.html">
-                        <img src="./imagens/cursos/sistemas-operacionais.png" alt="sistemas-operacionais">
-                        <h3>Sistemas Operacionais</h3>
-                    </a>
-                </div>
-
-                <div class="curso" id="arquitetura">
-                    <a href="./cursos/arquitetura.html">
-                        <img src="./imagens/cursos/arq-org-comp.jpg" alt="arquitetura-e-organizacao-de-computadores">
-                        <h3>Arq. de Computadores</h3>
-                    </a>
-                </div>
-
-                <div class="curso" id="ingles">
-                    <a href="./cursos/ingles.html">
-                        <img src="./imagens/cursos/ingles.png" alt="ingles-instrumental">
-                        <h3>Ingles Instrumental</h3>
-                    </a>
-                </div>
-
-                <div class="curso" id="metodologia">
-                    <a href="./cursos/metodologia.html">
-                        <img src="./imagens/cursos/metodologia.jpg" alt="metodologia-cientifica">
-                        <h3>Metodologia Científica</h3>
-                    </a>
+    <main>
+        <!--BANNER CENTRAL-->
+        <section>
+            <div class="linha">
+                <div class="col-dg-12 col-dm-12 banner-central">
+                    <img src="img/logos/pclogo.png" alt="Banner central">
                 </div>
             </div>
-            <!-- Fim div cursos -->
-        </article>
-
-        <article>
-            <div class="contribuir">
-                <p>
-                    Tem alguma sugestão, melhoria ou opinião que possa colaborar com o desenvolvimento do nosso projeto?
-                    Entre em contato com a gente e contribua para que cada vez mais nosso projeto possa ajudar a todos!
-                </p>
-                <a href="./opinioes.html">#Contribuir</a>
+        </section>
+        <!--APRESENTAÇÃO-->
+        <section>
+            <div class="linha">
+                <div class="col-dg-12 col-dm-12 apresentacao">
+                    <h2>Olá! Bem vindo(s) a #.NET<br>sua escola digital!</h2>
+                    <p>Aqui você encontra os melhores cursos em vídeo das disciplinas de Lógica de Programação, Fundamentos de Web Design I, Sistemas Operacionais, Arquitetura e Organização de Computadores, Inglês Instrumental e Metodologia Cietífica. Além das vídeos aulas temos também questionários para você testar seus conhecimentos adquiridos e você pode entrar em contato conosco sempre que quiser tirar alguma dúvida.</p>
+                </div>
             </div>
-            <div class="saibaMais">
-                <p>
-                    Quer saber mais sobre nosso projeto e/ou nossa equipe?
-                </p>
-                <a href="./quem-somos.html">#Conhecer</a>
+        </section>
+        <!--CURSOS-->
+        <section>
+            <div class="linha cursos">
+                <div class="col-dg-12 col-dm-12">
+                    <h2>CURSOS OFERECIDOS</h2>
+                </div>
             </div>
-        </article>
-    </section>
-
+            <div class="linha cursos">
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Lógica de programação</h3>
+                            <img src="img/cursos/logica.jpg" alt="Curso de Lógica de programação">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Fundamentos de Web Design I</h3>
+                            <img src="img/cursos/webdesign.jpg" alt="Curso de Fundamentos de Web Design I">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Sistemas Operacionais</h3>
+                            <img src="img/cursos/sistemas-operacionais.png" alt="Curso de Sistemas Operacionais">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Arquitetura de Organização de Computadores</h3>
+                            <img src="img/cursos/arq-org-comp.jpg" alt="Curso de Arquitetura de Organização de Computadores">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Inglês Instrumental</h3>
+                            <img src="img/cursos/ingles.png" alt="Curso de Inglês Instrumental">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-dg-4 col-dm-6">
+                    <div class="linha">
+                        <div class="col-dg-10 col-dm-10 box-curso">
+                            <h3>Metodologia Científica</h3>
+                            <img src="img/cursos/metodologia.jpg" alt="Curso de Metodologia Científica">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis laborum, molestiae, laboriosam facilis commodi at, eum officiis vitae tempora error sapiente voluptate nihil incidunt illum eveniet architecto provident perspiciatis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CONTRIBUIR | CONHECER-->
+        <section id="contribua">
+            <div class="linha contribua-conheca">
+                <div class="col-dg-6 col-dm-6">
+                    <p>Tem alguma sugestão, melhoria ou opinião que possa colaborar com o desenvolvimento do nosso projeto? Entre em contato com a gente e contribua para que cada vez mais nosso projeto possa ajudar a todos!</p>
+                    <h4>#Saiba mais</h4>
+                </div>
+                <div class="col-dg-6 col-dm-6">
+                    <p>Quer saber mais sobre nosso projeto e/ou nossa equipe?</p>
+                    <h4>#Saiba mais</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--RODAPE-->
     <footer>
-        <div id="equipe">
-            <p>
-                Equipe:
-            </p>
-            <div class="equipe">
-                <a href="./quem-somos.html#gledson">
-                    <abbr title="Gledson Rodrigues de Oliveira Junior">
-                        <img src="./imagens/equipe/WhatsApp Image 2019-04-05 at 01.19.16.jpeg" alt="Gledson">
-                        <p>Gledson</p>
-                    </abbr>
-                </a>
+        <div class="linha">
+            <div class="col-dg-4 col-dm-4 logo-rodape">
+                <img src="img/logos/fulllogo - Copia.png" alt="Logo #.NET">
             </div>
-            <div class="equipe">
-                <a href="./quem-somos.html#kelvin">
-                    <abbr title="Kelvin Arruda">
-                        <img src="./imagens/equipe/kelvin.jpg" alt="kelvin">
-                        <p>Kelvin</p>
-                    </abbr>
-                </a>
+            <div class="col-dg-4 col-dm-4">
+                <div class="linha">
+                    <div class="col-dg-4 col-dm-4 equipe">
+                        <a href="#">
+                            <abbr title="Gledson Rodrigues de Oliveira Junior">
+                                <img src="img/equipe/gledson.jpeg" alt="Gledson">
+                                <p>Gledson</p>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="col-dg-4 col-dm-4 equipe">
+                        <a href="#">
+                            <abbr title="Kelvin Arruda">
+                                <img src="img/equipe/kelvin.jpg" alt="Kelvin">
+                                <p>Kelvin</p>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="col-dg-4 col-dm-4 equipe">
+                        <a href="#">
+                            <abbr title="Nawan Soares">
+                                <img src="img/equipe/nawan.jpg" alt="Nawan">
+                                <p>Nawan</p>
+                            </abbr>
+                        </a>
+                    </div>
+                    <div class="col-dg-4 col-dm-4 equipe">
+                        <a href="#">
+                            <abbr title="Wanderson Gutemberg">
+                                <img src="img/equipe/wanderson.jpg" alt="Wanderson">
+                                <p>Wanderson</p>
+                            </abbr>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="equipe">
-                <a href="./quem-somos.html#nawan">
-                    <abbr title="Nawan Soares">
-                        <img src="./imagens/equipe/nawan.jpg" alt="nawan">
-                        <p>Nawan</p>
-                    </abbr>
-                </a>
+            <div class="col-dg-4 col-dm-4 autoria">
+                Todos os direitos reservados
             </div>
-            <div class="equipe">
-                <a href="./quem-somos.html#wanderson">
-                    <abbr title="Wanderson Gutemberg">
-                        <img src="./imagens/equipe/wanderson.jpg" alt="Wanderson">
-                        <p>Wanderson</p>
-                    </abbr>
-                </a>
-            </div>
-        </div>
-        <!-- Fim id equipe -->
-        <div id="contatos">
-            <p>
-                Contatos:
-            </p>
-            <div class="contatos" id="email">
-                <a href="mailto:hashtagds.net@gmail.com" target="_blank">
-                    <abbr title="Email">
-                        <img src="./imagens/contatos/email.png" alt="email">
-                    </abbr>
-                </a>
-            </div>
-            <div class="contatos" id="youtube">
-                <a href="http://www.youtube.com/channel/UCwHvG9lSwCbZDNrRViGLaiA" target="_blank">
-                    <abbr title="Youtube">
-                        <img src="./imagens/contatos/youtube-icon.png" alt="youtube">
-                    </abbr>
-                </a>
-            </div>
-        </div>
-        <div id="apoio">
-            <p>
-                Apoio:
-            </p>
-            <div class="apoio" id="IFTM">
-                <a href="http://www.iftm.edu.br/uberlandiacentro" target="_blank">
-                    <abbr title="IFTM - Campus Uberlândia Centro">
-                        <img src="./imagens/apoio/iftm.jpg" alt="iftm">
-                    </abbr>
-                </a>
-            </div>
-        </div>
-        <div id="direitos">
-            <a href="./index.html">
-                <img src="./imagens/fulllogo.png" alt="logo">
-            </a>
-            <p>Todos os direitos reservados</p>
         </div>
     </footer>
 </body>
-
 </html>
