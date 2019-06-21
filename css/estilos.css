@@ -137,12 +137,17 @@ main {
 }
 #contribua {
     background-color: #e9f1fad0;
+    text-align: center;
+}
+.contribua-conheca img {
+    width: 20%;
 }
 .contribua-conheca h4 {
     color: #368bda;
     text-decoration: underline;
     cursor: pointer;
 }
+
 .equipe {
     padding: 0;
     width: 60px;
@@ -150,6 +155,11 @@ main {
     border: none;
     margin: 0px 8px;
 }
+
+abbr {
+    text-decoration: none;
+}
+
 .equipe img {
     border: 1px solid #203141;
     border-radius: 45px;
@@ -219,5 +229,15 @@ main {
     }
     .logo-rodape img {
         width: 300px;
+    }
+    .equipe img {
+        filter: brightness(0.7);
+        transition: all 0.3s;
+    }
+    .contribua-conheca img {
+        width: 10%;
+    }
+    .equipe img:hover {
+        filter: none;
     }
 }
