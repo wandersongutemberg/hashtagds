@@ -161,7 +161,7 @@ abbr {
 }
 
 .equipe img {
-    border: 1px solid #203141;
+    /* border: 1px solid #203141; */
     border-radius: 45px;
     width: 100%;
     overflow: hidden;
