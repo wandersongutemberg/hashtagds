@@ -183,6 +183,10 @@ abbr {
     color: #203141;
 }
 
+.contatos img {
+    width: 20%;
+}
+
 @media screen and (max-width: 599px) {
     .cursos .box-curso {
         border: 1px solid #ccc;
