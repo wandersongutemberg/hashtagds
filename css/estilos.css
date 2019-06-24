@@ -222,7 +222,7 @@ abbr {
 }
 
 .contatos img {
-    width: 50%;
+    width: 60%;
 }
 
 #selecionado {
@@ -245,6 +245,22 @@ abbr {
 @media screen and (min-width: 600px) {
     .box-curso {
         height: 600px;
+    }
+
+    .contatos {
+        width: 50%;
+    }
+
+    .contatos img {
+        width: 35%;
+    }
+    
+    .logo-rodape img {
+        width: 50%;
+    }
+    
+    .saiba-equipe {
+        padding-top: 50px;
     }
 }
 
