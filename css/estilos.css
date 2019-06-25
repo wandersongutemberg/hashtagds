@@ -140,12 +140,6 @@ main {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
-.cursos h2 {
-    text-align: center;
-    background-color: rgb(32, 49, 65);
-    color: white;
-    padding: .6em;
-}
 
 .cursos h3 {
     text-align: center;
@@ -159,6 +153,23 @@ main {
 .cursos p {
     margin-top: 1em;
     text-align: justify;
+}
+
+.cursos h2, .cursos .bt-comece {
+    text-align: center;
+    background-color: rgb(32, 49, 65);
+    color: white;
+    padding: .6em;
+}
+
+.cursos .bt-comece {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(209, 80, 2, 0.8);
+}
+
+.box-curso {
+    text-decoration: none;
 }
 
 #contribua {
@@ -315,6 +326,11 @@ abbr {
     .cursos h2 {
         width: 400px;
         margin: auto;
+    }
+
+    .bt-comece {
+        margin-left: 80px;
+        margin-right: 80px;
     }
 
     .logo-rodape img {
