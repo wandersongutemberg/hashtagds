@@ -11,6 +11,7 @@ nav {
     position: fixed;
     width: 100%;
     background-color: rgb(32, 49, 65);
+    z-index: 2;
 }
 
 label[for="bt-menu"] {
@@ -178,7 +179,7 @@ main {
 .equipe {
     /* padding: 0px 8px; */
     width: 25%;
-    height: 80px;
+    /* height: 80px; */
     border: none;
     /* margin: 0px 8px; */
     text-align: center;
@@ -260,7 +261,7 @@ abbr {
     }
     
     .saiba-equipe {
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .mais-comentarios {
@@ -346,10 +347,6 @@ abbr {
         filter: opacity(0.6);
         transition: all 0.2s;
         width: 60%;
-    }
-
-    .saiba-equipe {
-        margin-top: 100px;
     }
 
     .mais-comentarios {
