@@ -1,0 +1,138 @@
+/* GERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #203141;
+}
+
+/* MENU */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(32, 49, 65);
+    z-index: 2;
+}
+
+label[for="bt-menu"] {
+    position: relative;
+    float: left;
+    padding-top: 3px;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    background-color: rgb(162, 165, 169);
+    color: #203141;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+}
+
+#bt-menu {
+    display: none;
+}
+
+.menu {
+    margin-top: -100%;
+    border-top: 1px solid rgb(162, 165, 169);
+    transition: all 0.2s;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    background-color: rgb(32, 49, 65);
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+
+.menu ul li {
+    width: 100%;
+    float: none;
+}
+
+.menu>ul>li {
+    border-top: .1px solid rgba(162, 165, 169, .8);
+}
+
+.menu ul li a {
+    padding: 10px 10px 10px 40px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: rgb(209, 92, 20);
+    font-weight: bold;
+    background-color: #dddddd;
+}
+
+.menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 0.4s;
+    background-color: rgb(32, 49, 65);
+}
+
+.menu ul li:hover ul {
+    height: auto;
+    max-height: 1500px;
+}
+
+.menu ul li ul li a {
+    padding-left: 70px;
+    font-size: 12px;
+}
+
+#bt-menu:checked~.menu {
+    margin-top: 55px;
+}
+
+@media screen and (min-width: 1200px) {
+
+    nav {
+        background: transparent;
+    }
+
+    label[for="bt-menu"] {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 0px;
+        height: 42px;
+    }
+
+    .menu>ul>li {
+        width: 200px;
+        float: left;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu ul ul {
+        width: 200px;
+    }
+
+    .menu ul li ul li {
+        width: 200px;
+        text-align: center;
+    }
+
+    .menu ul li ul li a {
+        padding: 9px;
+    }
+}

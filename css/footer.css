@@ -1,0 +1,62 @@
+.logo-rodape {
+    text-align: center;
+}
+
+.logo-rodape img {
+    width: 80%;
+}
+
+.autoria {
+    text-align: center;
+    color: #203141;
+}
+
+.contatos {
+    width: 50%;
+    text-align: center;
+}
+
+.contatos img {
+    width: 60%;
+}
+
+#selecionado {
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.mapa-rodape {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+    .contatos {
+        width: 50%;
+    }
+
+    .contatos img {
+        width: 30%;
+    }
+    
+    .logo-rodape img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .logo-rodape img {
+        /* width: 300px; */
+        width: 100%;
+    }
+
+    .contatos img {
+        width: 80%;
+    }
+}

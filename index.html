@@ -30,7 +30,7 @@
     <meta name="keywords" content="web,internet,curso,tecnologia">
     <meta name="robots" content="index,follow,noarchive">
 
-    <!-- Inicio favicon -->
+    <!-- Favicon - inicio -->
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
@@ -48,14 +48,18 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Termino favicon -->
+    <!-- Favicon - fim -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/resson.css" type="text/css">
-    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <!-- CSS - inicio-->
+    <link rel="stylesheet" href="./css/resson.css" type="text/css">
+    <link rel="stylesheet" href="./css/header.css" type="text/css">
+    <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <!-- CSS - fim -->
 </head>
 
 <body>
+    <!-- MENU HAMBURGER -->
     <header>
         <nav>
             <input type="checkbox" id="bt-menu">
@@ -274,12 +278,37 @@
         </section>
     </main>
     <!--RODAPE-->
-    <footer>
-        <div class="linha">
-            <div class="col-dm-12 col-dg-3 logo-rodape">
-                <img src="img/logos/fulllogo.png" alt="Logo #.NET">
+    <div class="linha">
+        <footer>
+            <!-- LOGO E CONTATOS -->
+            <div class="col-dm-12 col-dg-3">
+                <!-- LOGO -->
+                <div class="col-dm-12 col-dg-12 logo-rodape">
+                    <img src="img/logos/fulllogo.png" alt="Logo #.NET">
+                </div>
+                <!-- CONTATOS -->
+                <div class="col-dm-12 col-dg-12">
+                    <div class="linha centralizar">
+                        <p>Contatos:</p>
+                        <div class="col-dm-12 col-dg-6 contatos">
+                            <a href="mailto:hashtagds.net@gmail.com" target="_blank">
+                                <abbr title="Email">
+                                    <img src="./img/contatos/email.png" alt="email">
+                                </abbr>
+                            </a>
+                        </div>
+                        <div class="col-dm-12 col-dg-6 contatos">
+                            <a href="https://www.youtube.com/channel/UCwHvG9lSwCbZDNrRViGLaiA" target="_blank">
+                                <abbr title="YouTube">
+                                    <img src="./img/contatos/youtube-icon.png" alt="youtube">
+                                </abbr>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-dm-12 col-dg-7">
+            <!-- MAPA DO SITE -->
+            <div class="col-dm-12 col-dg-6">
                 <div class="linha">
                     <p class="centralizar">Mapa do site:</p>
                     <div class="col-dm-4 col-dg-4">
@@ -319,29 +348,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-dm-12 col-dg-2">
-                <div class="linha centralizar">
-                    <p>Contatos:</p>
-                    <div class="col-dm-12 col-dg-6 contatos">
-                        <a href="mailto:hashtagds.net@gmail.com" target="_blank">
-                            <abbr title="Email">
-                                <img src="./img/contatos/email.png" alt="email">
-                            </abbr>
-                        </a>
-                    </div>
-                    <div class="col-dm-12 col-dg-6 contatos">
-                        <a href="https://www.youtube.com/channel/UCwHvG9lSwCbZDNrRViGLaiA" target="_blank">
-                            <abbr title="YouTube">
-                                <img src="./img/contatos/youtube-icon.png" alt="youtube">
-                            </abbr>
-                        </a>
+            <!-- MAPA / NOS ENCONTRE -->
+            <div class="col-dm-12 col-dg-3">
+                <div class="linha">
+                    <p class="centralizar">
+                        Onde estamos:
+                    </p>
+                    <div class="col-dm-12 col-dg-12">
+                        <iframe class="mapa-rodape"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.9669565861295!2d-48.28227848454829!3d-18.932856687170176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e28f2d7a11%3A0x8fa16020966235f9!2sIFTM+Campus+Uberl%C3%A2ndia+Centro!5e0!3m2!1spt-BR!2sbr!4v1561518588543!5m2!1spt-BR!2sbr"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
+            <!-- DIREITOS RESERVADOS -->
             <div class="col-dm-12 col-dg-12 autoria">
                 Todos os direitos reservados
             </div>
-        </div>
+    </div>
     </footer>
 </body>
 
