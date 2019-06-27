@@ -97,6 +97,11 @@ label[for="bt-menu"] {
     margin-top: 55px;
 }
 
+#selecionado {
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
 @media screen and (min-width: 1200px) {
 
     nav {
