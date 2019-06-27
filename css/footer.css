@@ -1,5 +1,6 @@
 .logo-rodape {
     text-align: center;
+    padding: 0px; 
 }
 
 .logo-rodape img {
@@ -9,6 +10,7 @@
 .autoria {
     text-align: center;
     color: #203141;
+    padding: 0px;
 }
 
 .contatos {
@@ -53,10 +55,10 @@
 
     .logo-rodape img {
         /* width: 300px; */
-        width: 100%;
+        width: 25%;
     }
 
     .contatos img {
-        width: 80%;
+        width: 65%;
     }
 }
