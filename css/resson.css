@@ -45,3 +45,11 @@
     .col-dg-11 { width: 91.66%; }
     .col-dg-12 { width: 100.0%; }
 }
+
+.centralizar {
+    text-align: center;
+}
+
+.justificar {
+    text-align: justify;
+}
