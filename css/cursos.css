@@ -38,13 +38,13 @@ fieldset{
     background-color:rgba(211, 234, 250, 0.267);
     border:2px ridge rgba(209, 80, 2, 0.8);
 }
-ol{list-style-type:none}
-li{padding:7px}
-input[type="radio"]{
+main ol{list-style-type:none}
+main li{padding:7px}
+main input[type="radio"]{
     margin-right:10px;
     margin-left:-7px;
 }
-input[type="submit"]{
+main input[type="submit"]{
     background-color:rgba(209, 80, 2, 0.8);
     text-align: center;
     padding:10px;
@@ -56,7 +56,7 @@ input[type="submit"]{
     border-radius:10px;
     cursor:pointer;
 }
-input[type="reset"]{
+main input[type="reset"]{
     background-color:rgba(209, 80, 2, 0.8);
     text-align: center;
     padding:10px;
@@ -79,7 +79,7 @@ hr{
         width:500px;
         height:300px;
     }
-    li{
+    main li{
         padding:5px;
     }
 }
