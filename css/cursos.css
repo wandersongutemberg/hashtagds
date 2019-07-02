@@ -76,6 +76,9 @@ main input[type="reset"]{
 hr{
     margin:30px 5px 40px 5px;
 }
+main img {
+    width: 100%;
+}
 @media screen and (min-width: 600px) {
     iframe{
         width:500px;
@@ -84,10 +87,16 @@ hr{
     main li{
         padding:5px;
     }
+    main img {
+        width: 80%;
+    }
 }
 @media screen and (min-width: 1000px) {
     iframe{
         width:750px;
         height:450px;
+    }
+    main img {
+        width: 50%;
     }
 }
