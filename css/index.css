@@ -109,6 +109,10 @@ abbr {
     overflow: hidden;
 }
 
+.equipe img:active {
+    transform: rotate(-360deg);
+}
+
 .equipe a {
     text-decoration: none;
     font-size: 12px;
@@ -163,12 +167,13 @@ abbr {
     .equipe img:hover {
         filter: none;
         border: 2px solid lightskyblue;
+        transform: rotate(-360deg);
     }
 
     .equipe img {
         /* filter: grayscale(1); */
         filter: opacity(0.6);
-        transition: all 0.2s;
+        transition: all 0.3s;
         width: 60%;
     }
 
