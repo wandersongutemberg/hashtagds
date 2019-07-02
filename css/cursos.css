@@ -38,11 +38,15 @@ fieldset{
     background-color:rgba(211, 234, 250, 0.267);
     border:2px ridge rgba(209, 80, 2, 0.8);
 }
-main ol{list-style-type:none}
+/* main ol{list-style-type:none} */
 main li{padding:7px}
 main input[type="radio"]{
     margin-right:10px;
     margin-left:-7px;
+}
+
+.perguntas {
+    padding: 25px;
 }
 main input[type="submit"]{
     background-color:rgba(209, 80, 2, 0.8);
