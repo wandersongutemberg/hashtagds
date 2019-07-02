@@ -50,6 +50,7 @@ main input[type="submit"]{
     padding:10px;
     font-size:14px;
     margin-bottom:10px;
+    margin-right:10px;
     color:white;
     box-shadow:-1px 1px 2px 1px #203141;
     border:0px;
@@ -64,6 +65,7 @@ main input[type="reset"]{
     color:white;
     box-shadow:-1px 1px 2px 1px #203141;
     margin-bottom:10px;
+    margin-left:10px;
     border-radius:10px;
     border:0px;
     cursor:pointer;
