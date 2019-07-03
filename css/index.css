@@ -84,7 +84,7 @@ main {
 
 .contribua-conheca h4 {
     color: #368bda;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     cursor: pointer;
 }
 
