@@ -156,7 +156,7 @@ abbr {
 @media screen and (min-width: 600px) {
     
     .box-curso img {
-        width: 50%;
+        width: 80%;
     }
 
     .mais-comentarios {
@@ -172,6 +172,10 @@ abbr {
 
     .banner-central img {
         width: 400px;
+    }
+
+    .box-curso img {
+        height: 250px;
     }
 
     .cursos h2 {
