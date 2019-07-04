@@ -1,0 +1,364 @@
+/* GERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #203141;
+}
+
+/* MENU */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(32, 49, 65);
+    z-index: 2;
+}
+
+label[for="bt-menu"] {
+    position: relative;
+    float: left;
+    padding-top: 3px;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+    background-color: rgb(162, 165, 169);
+    color: #203141;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: block;
+}
+
+#bt-menu {
+    display: none;
+}
+
+.menu {
+    margin-top: -100%;
+    border-top: 1px solid rgb(162, 165, 169);
+    transition: all 0.2s;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    background-color: rgb(32, 49, 65);
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+
+.menu ul li {
+    width: 100%;
+    float: none;
+}
+
+.menu>ul>li {
+    border-top: .1px solid rgba(162, 165, 169, .8);
+}
+
+.menu ul li a {
+    padding: 10px 10px 10px 40px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: rgb(209, 92, 20);
+    font-weight: bold;
+    background-color: #dddddd;
+}
+
+.menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 0.4s;
+    background-color: rgb(32, 49, 65);
+}
+
+.menu ul li:hover ul {
+    height: auto;
+    max-height: 1500px;
+}
+
+.menu ul li ul li a {
+    padding-left: 70px;
+    font-size: 12px;
+}
+
+#bt-menu:checked~.menu {
+    margin-top: 55px;
+}
+
+/* SECTION */
+main {
+    padding-top: 70px;
+}
+
+.banner-central {
+    text-align: center;
+}
+
+.banner-central img {
+    width: 70%;
+}
+
+.apresentacao {
+    background-color: rgb(241, 239, 239);
+}
+
+.apresentacao h2 {
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.apresentacao p {
+    margin-top: 1.2em;
+    text-align: justify;
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursos .box-curso {
+    background-color: rgba(211, 234, 250, 0.267);
+    margin-bottom: 1em;
+}
+
+.cursos .box-curso:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+}
+
+
+.cursos h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.cursos img {
+    width: 60%;
+}
+
+.cursos p {
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.cursos h2, .cursos .bt-comece {
+    text-align: center;
+    background-color: rgb(32, 49, 65);
+    color: white;
+    padding: .6em;
+}
+
+.cursos .bt-comece {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: rgba(209, 80, 2, 0.8);
+}
+
+.box-curso {
+    text-decoration: none;
+}
+
+#contribua {
+    background-color: #e9f1fad0;
+    text-align: center;
+}
+
+.contribua-conheca img {
+    width: 30%;
+}
+
+.contribua-conheca h4 {
+    color: #368bda;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.equipe {
+    /* padding: 0px 8px; */
+    width: 25%;
+    /* height: 80px; */
+    border: none;
+    /* margin: 0px 8px; */
+    text-align: center;
+}
+
+abbr {
+    text-decoration: none;
+    text-align: center;
+}
+
+.equipe img {
+    /* border: 1px solid #203141; */
+    border-radius: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.equipe a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #203141;
+    text-align: center;
+}
+
+.logo-rodape {
+    text-align: center;
+}
+
+.logo-rodape img {
+    width: 80%;
+}
+
+.autoria {
+    text-align: center;
+    color: #203141;
+}
+
+.contatos {
+    width: 50%;
+    text-align: center;
+}
+
+.contatos img {
+    width: 60%;
+}
+
+#selecionado {
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+
+.centralizar {
+    text-align: center;
+}
+
+@media screen and (max-width: 599px) {
+    .cursos .box-curso {
+        border: 1px solid #ccc;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .box-curso img {
+        width: 50%;
+    }
+
+    .contatos {
+        width: 50%;
+    }
+
+    .contatos img {
+        width: 50%;
+    }
+    
+    .logo-rodape img {
+        width: 50%;
+    }
+    
+    .saiba-equipe {
+        margin-top: 35px;
+    }
+
+    .mais-comentarios {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    nav {
+        background: transparent;
+    }
+
+    label[for="bt-menu"] {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 0px;
+        height: 42px;
+    }
+
+    .menu>ul>li {
+        width: 200px;
+        float: left;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu ul ul {
+        width: 200px;
+    }
+
+    .menu ul li ul li {
+        width: 200px;
+        text-align: center;
+    }
+
+    .menu ul li ul li a {
+        padding: 9px;
+    }
+
+    .banner-central img {
+        width: 400px;
+    }
+
+    .cursos h2 {
+        width: 400px;
+        margin: auto;
+    }
+
+    .bt-comece {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .logo-rodape img {
+        /* width: 300px; */
+        width: 90%;
+    }
+
+    .contribua-conheca img {
+        width: 13%;
+    }
+
+    .equipe img:hover {
+        filter: none;
+        border: 2px solid lightskyblue;
+    }
+
+    .equipe img {
+        /* filter: grayscale(1); */
+        filter: opacity(0.6);
+        transition: all 0.2s;
+        width: 60%;
+    }
+
+    .mais-comentarios {
+        margin-top: 70px;
+    }
+
+    .contatos img {
+        width: 100%;
+    }
+}
