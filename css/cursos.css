@@ -1,22 +1,27 @@
 main{
     padding-top:70px;
+    padding-bottom:30px;
+    background-color: rgba(211, 234, 250, 0.267);
 }
 main h1{
     color:white;
     background-color:#203141;
+    width:100%;
     padding:15px;
 }
-.fundo{
-    padding:5px;
-}
+abbr{text-decoration:none}
+.removePadding{padding:0px}
+.fundo{padding:5px}
 main h3{
     background-color:rgba(209, 80, 2, 0.8);
     color:white;
+    text-align:center;
     padding:15px;
 }
 main p{
     line-height:1.5em;
     margin-top:15px;
+    padding:20px;
 }
 main em{
     display:block;
@@ -34,73 +39,57 @@ main a{
     color:rgba(209, 80, 2, 0.8);
     font-size:17px;
 }
-fieldset{
-    background-color:rgba(211, 234, 250, 0.267);
-    border:2px ridge rgba(209, 80, 2, 0.8);
+main img {
+    width:80%;
+    padding-top:15px;
 }
-/* main ol{list-style-type:none} */
-main li{padding:7px}
-main input[type="radio"]{
-    margin-right:10px;
-    margin-left:-7px;
+.icone{
+    width:45px;
+    height:45px;
+    border-radius:25%;
+    box-shadow:-1px 1px 2px 1px rgba(209, 80, 2, 0.8);
+    padding:0px;
+}
+.presp{
+    color:rgba(209, 80, 2, 0.8);
+    padding:0px;
 }
 
-.perguntas {
-    padding: 25px;
-}
-main input[type="submit"]{
-    background-color:rgba(209, 80, 2, 0.8);
-    text-align: center;
-    padding:10px;
-    font-size:14px;
-    margin-bottom:10px;
-    margin-right:10px;
-    color:white;
-    box-shadow:-1px 1px 2px 1px #203141;
-    border:0px;
-    border-radius:10px;
-    cursor:pointer;
-}
-main input[type="reset"]{
-    background-color:rgba(209, 80, 2, 0.8);
-    text-align: center;
-    padding:10px;
-    font-size:14px;
-    color:white;
-    box-shadow:-1px 1px 2px 1px #203141;
-    margin-bottom:10px;
-    margin-left:10px;
-    border-radius:10px;
-    border:0px;
-    cursor:pointer;
-}
-.separador{
-    padding:20px;
-}
-hr{
-    margin:30px 5px 40px 5px;
-}
-main img {
-    width: 100%;
-}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 1199px){
     iframe{
         width:500px;
         height:300px;
     }
-    main li{
-        padding:5px;
+    main img {width:50%}
+    .icone{
+        width:60px;
+        height:60px;
     }
-    main img {
-        width: 80%;
+    .aulaImpar h3{
+        margin-right:20%;
+        width:80%;
+        text-align:right;
+    }
+    .aulaPar h3{
+        margin-left:20%;
+        width:80%;
+        text-align:left;
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
     iframe{
-        width:750px;
-        height:450px;
+        width:600px;
+        height:300px;
     }
-    main img {
-        width: 50%;
+    main h3{text-align:center}
+    main img {width:30%}
+    .icone{
+        width:70px;
+        height:70px;
     }
+    .aula1{margin-right:20px}
+    .aula2{margin-left:20px}
+    .aulaPar p{padding-left:40px}
+    .aulaImpar p{padding-right:40px}
+    .presp{display:none}
 }
