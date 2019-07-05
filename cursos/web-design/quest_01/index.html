@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!-- 
+
+            ####   ####    NNN       NN EEEEEEEEEE TTTTTTTTTTT
+           ####   ####     NNNN      NN EEEEEEEEEE TTTTTTTTTTT
+      ###################  NN NN     NN EE             TT
+     ###################   NN  NN    NN EE             TT
+        ####   ####        NN   NN   NN EEEEEE         TT
+   ###################     NN    NN  NN EE             TT
+  ###################      NN     NN NN EE             TT
+     ####   ####      #### NN      NNNN EEEEEEEEEE     TT
+    ####   ####       #### NN       NNN EEEEEEEEEE     TT      #DIGITALSCHOOL
+
+-->
+
+<head>
+        <title>Questionário 01 - FWDI - #.NET </title>
+        <meta name="description" content="Curso de Web Design">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Gledson Rodrigues de Oliveira Junior,
+        Kelvin Arruda Silva,
+        Nawan Soares Novais,
+        Wanderson Gutemberg Teotonio Silva">
+        <meta name="reply-to" content="hashtagds.net@gmail.com">
+        <meta name="keywords" content="web,design,curso,tecnologia">
+        <meta name="robots" content="index,follow,noarchive">
+
+        <!-- Favicon - inicio -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Favicon - fim -->
+        <link rel="stylesheet" href="../../../css/resson.css" type="text/css">
+        <link rel="stylesheet" href="../../../css/quest.css" type="text/css">
+        <link rel="stylesheet" href="../../../css/header.css" type="text/css">
+        <link rel="stylesheet" href="../../../css/footer.css" type="text/css">
+        <script>
+                NUMERO_QUESTOES = 5;
+
+                function armazenarResposta() {
+                        if (typeof (Storage) !== "undefined") {
+                                localStorage.setItem("nroQuestoes", NUMERO_QUESTOES.toString())
+                                for (j = 0; j < NUMERO_QUESTOES; j++) {
+                                        questao = document.getElementsByName("questao" + (j + 1));
+                                        for (i = 0; i < questao.length; i++)
+                                                if (questao[i].checked) {
+                                                        localStorage.setItem("questao" + (j + 1), (i + 1).toString())
+                                                        break
+                                                }
+                                }
+                                window.open("certificado/index.html", "_self");
+                        } else alert("Seu navegador é muito antigo para utilizar esse recurso")
+                }
+
+        </script>
+</head>
+
+
+<body>
+        <!-- MENU HAMBURGER -->
+        <header>
+                <nav>
+                        <input type="checkbox" id="bt-menu">
+                        <label for="bt-menu">&#9776;</label>
+                        <div class="menu">
+                                <ul>
+                                        <li><a href="../../../">Início</a></li>
+                                        <li><a id="selecionado">Cursos</a>
+                                                <ul>
+                                                        <li><a href="#">Lógica de Programação</a></li>
+                                                        <li><a href="./">Fundamentos de Web Design I</a></li>
+                                                        <li><a href="#">Sistemas Operacionais</a></li>
+                                                        <li><a href="#">Arquitetura e Organização de Computadores</a>
+                                                        </li>
+                                                        <li><a href="#">Inglês Instrumental</a></li>
+                                                        <li><a href="#">Metodologia Científica</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="../../../quem-somos/">Quem somos?</a></li>
+                                        <li><a href="#">Opiniões</a></li>
+                                        <li><a href="#">Fale conosco</a></li>
+                                        <li><a href="../../../agradecimentos/">Agradecimentos</a></li>
+                                </ul>
+                        </div>
+                </nav>
+        </header>
+        <!-- CONTEUDO -->
+        <main>
+                <div class="linha">
+                        <div class="col-dm-12 col-dg-12 removePadding centralizar">
+                                <h1>Fundamentos de Web Design I</h1>
+                                <img src="../../../img/cursos/web-t.png" alt="web-design">
+                                <p class="justificar">Nesta página você terá acesso a um questionário onde faremos
+                                        perguntas sobre
+                                        o assunto ensinado na video aula, ao termino do mesmo, caso atinja um minimo
+                                        de 60% de acertos, você terá acesso a um certificado que comprova que passou
+                                        desta parte. Bom teste!
+                                </p>
+                        </div>
+                        <div class="col-m-12 col-dg-12">
+                                <div class="questionario espacamento">
+                                        <form action="">
+                                                <ol>
+                                                        <li>
+                                                                O que é HTML?
+                                                                <ol type="a">
+                                                                        <li><label><input type="radio" name="questao1">É
+                                                                                        uma
+                                                                                        linguagem
+                                                                                        de
+                                                                                        programação de
+                                                                                        computadores.</label></li>
+                                                                        <li><label><input type="radio" name="questao1">É
+                                                                                        uma
+                                                                                        estrutura
+                                                                                        da língua
+                                                                                        portuguesa.</label></li>
+                                                                        <li><label><input type="radio" name="questao1">É
+                                                                                        uma
+                                                                                        estrutura
+                                                                                        de
+                                                                                        marcação de
+                                                                                        texto para construção
+                                                                                        de
+                                                                                        páginas da web.</label></li>
+                                                                        <li><label><input type="radio" name="questao1">É
+                                                                                        uma
+                                                                                        forma de
+                                                                                        marcação
+                                                                                        de
+                                                                                        instruções para o sistema
+                                                                                        operacional.</label></li>
+                                                                </ol>
+                                                        </li>
+
+                                                        <li>
+                                                                Quem criou o HTML e qual era seu objetivo?
+                                                                <ol type="a">
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao2">Foi
+                                                                                        criado por
+                                                                                        Steve Jobs
+                                                                                        para
+                                                                                        desenvolvimento da sua
+                                                                                        suíte office.</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao2">Foi
+                                                                                        criado por
+                                                                                        Tim
+                                                                                        Berners-Lee e
+                                                                                        tinha como objetivo
+                                                                                        o compartilhamento de pesquisas
+                                                                                        com
+                                                                                        outros
+                                                                                        cientistas.</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao2">Foi
+                                                                                        criado por
+                                                                                        Satya
+                                                                                        Nadella para
+                                                                                        criação de páginas
+                                                                                        para o Android.</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao2">Foi
+                                                                                        criado por
+                                                                                        Bill Gates
+                                                                                        para
+                                                                                        desenvolvimento do
+                                                                                        Windows.</label></li>
+                                                                </ol>
+                                                        </li>
+
+                                                        <li>
+                                                                O que são Tags?
+                                                                <ol type="a">
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao3">Tags são
+                                                                                        bibliotecas de
+                                                                                        C#.</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao3">Tags são
+                                                                                        usados
+                                                                                        para
+                                                                                        declarar
+                                                                                        elementos em C++.</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao3">Tags são
+                                                                                        elementos
+                                                                                        utilizados
+                                                                                        pelo usuário de navegadores para
+                                                                                        pesquisar algo
+                                                                                        na
+                                                                                        internet.</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao3">Tags são
+                                                                                        elementos do
+                                                                                        HTML, elas
+                                                                                        são renderizadas pelo navegador
+                                                                                        para
+                                                                                        demonstrar
+                                                                                        um
+                                                                                        conteúdo. Ex.
+                                                                                        Textos, tabelas, imagens,
+                                                                                        etc.</label>
+                                                                        </li>
+                                                                </ol>
+                                                        </li>
+
+                                                        <li>
+                                                                Qual é a estrutura da maior parte das Tags?
+                                                                <ol type="a">
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao4">&lttag&gt
+                                                                                        conteúdo
+                                                                                        &lt/tag&gt</label></li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao4">&lttag
+                                                                                        atributos&gt conteúdo
+                                                                                        &lt/tag&gt</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao4">&lttag&gt</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao4">&lttag
+                                                                                        atributos&gt conteúdo
+                                                                                        &lttag/&gt</label></li>
+                                                                </ol>
+                                                        </li>
+
+                                                        <li>
+                                                                O que as tags &lthtml&gt, &lthead&gt, &ltbody&gt,
+                                                                respectivamente,
+                                                                significam?
+                                                                <ol type="a">
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao5">Define
+                                                                                        o início e o fim de um
+                                                                                        documento em HTML. Define as
+                                                                                        metas
+                                                                                        informações
+                                                                                        sobre o
+                                                                                        documento
+                                                                                        HTML.
+                                                                                        Define o corpo do documento HTML
+                                                                                        e todas
+                                                                                        as
+                                                                                        informações
+                                                                                        visíveis
+                                                                                        ao
+                                                                                        usuário
+                                                                                        se encontram nessa tag.</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao5">Define
+                                                                                        o corpo do documento
+                                                                                        HTML e todas as informações
+                                                                                        visíveis ao
+                                                                                        usuário
+                                                                                        se
+                                                                                        encontram
+                                                                                        nessa tag.
+                                                                                        Define as metas informações
+                                                                                        sobre o
+                                                                                        documento
+                                                                                        HTML.
+                                                                                        Define o
+                                                                                        início e o
+                                                                                        fim
+                                                                                        de um documento em HTML</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao5">Define
+                                                                                        o início e o fim de um
+                                                                                        documento em HTML. Define o
+                                                                                        corpo do
+                                                                                        documento
+                                                                                        HTML
+                                                                                        todas as
+                                                                                        informações
+                                                                                        visíveis ao usuário se encontram
+                                                                                        nessa
+                                                                                        tag.
+                                                                                        Define as
+                                                                                        metas
+                                                                                        informações
+                                                                                        sobre o documento HTML.</label>
+                                                                        </li>
+                                                                        <li><label><input type="radio"
+                                                                                                name="questao5">Nenhuma
+                                                                                        das
+                                                                                        alternativas
+                                                                                        anteriores.</label></li>
+                                                                </ol>
+                                                        </li>
+                                                </ol>
+
+                                                <div class="linha">
+                                                        <div class="col-dm-6 col-dg-6 botaodir">
+                                                            <input type="button" value="Conferir"
+                                                                    onclick="armazenarResposta()">
+                                                        </div>
+                                                        <div class="col-dm-6 col-dg-6 botaoesq">
+                                                            <input type="reset" value="Limpar">
+                                                        </div>
+                                                </div>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </main>
+        <!--RODAPE-->
+        <footer class="linha">
+                <!-- CONTATOS -->
+                <div class="col-dm-12 col-dg-3">
+                        <div class="linha centralizar">
+                                <p>Contatos:</p>
+                                <div class="col-dm-12 col-dg-6 contatos">
+                                        <a href="mailto:hashtagds.net@gmail.com" target="_blank">
+                                                <abbr title="Email">
+                                                        <img src="../../../img/contatos/email.png" alt="email">
+                                                </abbr>
+                                        </a>
+                                </div>
+                                <div class="col-dm-12 col-dg-6 contatos">
+                                        <a href="https://www.youtube.com/channel/UCwHvG9lSwCbZDNrRViGLaiA"
+                                                target="_blank">
+                                                <abbr title="YouTube">
+                                                        <img src="../../../img/contatos/youtube-icon.png" alt="youtube">
+                                                </abbr>
+                                        </a>
+                                </div>
+                        </div>
+                </div>
+                <!-- MAPA DO SITE -->
+                <div class="col-dm-12 col-dg-6">
+                        <div class="linha">
+                                <p class="centralizar">Mapa do site:</p>
+                                <div class="col-dm-4 col-dg-4">
+                                        <ul>
+                                                <li><a href="../../../">Início</a></li>
+                                                <li><a href="#">Opiniões</a></li>
+                                                <li><a href="#">Fale conosco</a></li>
+                                                <li><a href="../../../agradecimentos/">Agradecimentos</a></li>
+                                        </ul>
+                                </div>
+                                <div class="col-dm-4 col-dg-4">
+                                        <ul>
+                                                <li><a href="../../../quem-somos/">Quem somos?</a>
+                                                        <ul>
+                                                                <li><a href="../../../quem-somos/">#.NET</a></li>
+                                                                <li><a href="../../../quem-somos/#gledson">Gledson</a></li>
+                                                                <li><a href="../../../quem-somos/#kelvin">Kelvin</a></li>
+                                                                <li><a href="../../../quem-somos/#nawan">Nawan</a></li>
+                                                                <li><a href="../../../quem-somos/#wanderson">Wanderson</a>
+                                                                </li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="col-dm-4 col-dg-4">
+                                        <ul>
+                                                <li><a href="../">Cursos</a>
+                                                        <ul>
+                                                                <li><a href="#">Lógica de Programação</a></li>
+                                                                <li><a href="./">Fundamentos de Web Design I</a></li>
+                                                                <li><a href="#">Sistemas Operacionais</a></li>
+                                                                <li><a href="#">Arquitetura e Organização de
+                                                                                Computadores</a></li>
+                                                                <li><a href="#">Inglês Instrumental</a></li>
+                                                                <li><a href="#">Metodologia Científica</a></li>
+                                                        </ul>
+                                                </li>
+                                        </ul>
+                                </div>
+                        </div>
+                </div>
+                <!-- MAPA / NOS ENCONTRE -->
+                <div class="col-dm-12 col-dg-3">
+                        <div class="linha">
+                                <p class="centralizar">
+                                        Onde estamos:
+                                </p>
+                                <div class="col-dm-12 col-dg-12">
+                                        <iframe class="mapa-rodape"
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.9669565861295!2d-48.28227848454829!3d-18.932856687170176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e28f2d7a11%3A0x8fa16020966235f9!2sIFTM+Campus+Uberl%C3%A2ndia+Centro!5e0!3m2!1spt-BR!2sbr!4v1561518588543!5m2!1spt-BR!2sbr"
+                                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                        </div>
+                </div>
+                <!-- LOGO -->
+                <div class="col-dm-12 col-dg-12 logo-rodape">
+                        <img src="../../../img/logos/fulllogo.png" alt="Logo #.NET">
+                </div>
+                <!-- DIREITOS RESERVADOS -->
+                <div class="col-dm-12 col-dg-12 autoria">
+                        Todos os direitos reservados
+                </div>
+        </footer>
+</body>
+
+</html>

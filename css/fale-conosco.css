@@ -1,0 +1,78 @@
+h1 {
+    margin: 50px 0px 12px 0px;
+    font-size: 2em;
+    color: rgb(34,112,184);
+    text-shadow: 2px 2px 4px lightblue;
+}
+
+h3 {
+    color: rgba(209, 80, 2, 0.8);
+}
+
+.faq img, .form img {
+    width: 60%;
+}
+
+.fale-conosco p {
+    text-align: left;
+}
+
+section {
+    background-color: rgba(211, 234, 250, 0.267);
+    box-shadow: 1px 0px 1px gray;
+}
+
+.faq, .form {
+    background-color: white;
+    box-shadow: 0px 0px 2px lightskyblue;
+    box-sizing: border-box;
+    margin-bottom: 8%;
+}
+
+@media screen and (min-width:600px) {
+    .faq, .form {
+        margin: 1% 4.17%;
+    }
+
+}
+
+@media screen and (min-width:1000px) {
+    .faq, .form {
+    margin: 1% 4.17%;
+    }
+
+    .faq img, .form img {
+        width: 35%;
+    }
+}
+
+.textoform{
+ text-align: left; 
+}
+
+input, select {
+ width: 100%;
+ 
+}
+
+.caixaform {
+ padding: 20px;
+}
+
+textarea {
+ width: 100%;
+ height: 100px;
+ max-width: 100%;
+}
+
+.botoes{
+    padding: 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+}
