@@ -3,30 +3,35 @@ main{
     padding-bottom:30px;
     background-color: rgba(211, 234, 250, 0.267);
 }
+
 main h1{
     color:white;
     background-color:#203141;
     width:100%;
     padding:15px;
 }
-.removePadding{padding:0px}
+
 main p{
     line-height:1.5em;
     margin-top:15px;
     padding:20px;
 }
+
 .questionario{
     background-color:rgb(217, 231, 245);
     border-radius:20px 0px 20px 0px;
 }
+
 form{
     padding:50px;
     padding-top:30px;
 }
+
 form ol{
     padding-bottom:25px;
     padding-top:5px;
 }
+
 div input[type="button"]{
     background-color:rgba(209, 80, 2, 0.8);
     text-align: center;
@@ -41,6 +46,7 @@ div input[type="button"]{
     cursor:pointer;
     display:inline-block;
 }
+
 div input[type="reset"]{
     background-color:rgba(209, 80, 2, 0.8);
     text-align: center;
@@ -55,25 +61,35 @@ div input[type="reset"]{
     cursor:pointer;
     display:inline-block;
 }
+
 main img {
     width:80%;
     padding-top:15px;
     text-align:center;
     margin-bottom:15px;
 }
+
 @media screen and (min-width: 600px) {
     main img {width:50%}
 }
+
 @media screen and (min-width: 1000px) {
     main img{width:30%}
+
     .espacamento{
         margin-right:17%;
         margin-left:17%;
     }
+
     .botaodir{
         text-align:right;
     }
+
     .botaoesq{
         text-align:left;
+    }
+
+    .espaco{
+        padding:0px 15% 15px 15%;
     }
 }
