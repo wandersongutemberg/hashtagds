@@ -90,6 +90,10 @@ main {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
 }
 
+.cursos h1 {
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
 
 .cursos h3 {
     text-align: center;
@@ -105,7 +109,7 @@ main {
     text-align: justify;
 }
 
-.cursos h2, .cursos .bt-comece {
+.cursos h1, .cursos .bt-comece {
     text-align: center;
     background-color: rgb(32, 49, 65);
     color: white;
@@ -215,11 +219,6 @@ abbr {
         height: 250px;
     }
 
-    .cursos h2 {
-        width: 400px;
-        margin: auto;
-    }
-
     .bt-comece {
         margin-left: 80px;
         margin-right: 80px;
@@ -253,22 +252,14 @@ abbr {
         width: 60%;
     }
 
+    .apresentacao p {
+        padding: 0px 7%;
+    }
+
 }
 
 @media screen and (max-width:599px) {
     .equipe {
         width: 50%;
-    }
-
-    .op1 {
-        border-radius: 15% 0% 0% 0%;
-    }
-
-    .op2 {
-        border-radius: 0%;
-    }
-
-    .op3 {
-        border-radius: 0% 0% 15% 0%;
     }
 }
