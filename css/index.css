@@ -28,28 +28,31 @@ main {
 }
 
 @keyframes banner {
+
     0%, 10% {
         background-image: url(../img/banner/ola.jpg);
         opacity: 1;
     }
+
     11%, 30% {
         background-image: url(../img/banner/bemvindo.jpg);
         opacity: 1;
     }
-    31%, 34% {
-        opacity: 0.1;
-    }
+
+    31%, 34% {opacity: 0.1;}
+
     35%, 65% {
         background-image: url(../img/banner/hash.jpg);
         opacity: 1;
     }
-    66%, 69% {
-        opacity: 0.1;
-    }
+
+    66%, 69% {opacity: 0.1;}
+
     70%, 95% {
         background-image: url(../img/banner/escola-digital.jpg);
         opacity: 1;
     }
+    
     96%, 100% {
         opacity: 0.1;
     }
@@ -213,10 +216,6 @@ abbr {
 }
 
 @media screen and (min-width: 1000px) {
-
-    .banner-central img {
-        /* width: 400px; */
-    }
 
     .box-curso img {
         height: 250px;
