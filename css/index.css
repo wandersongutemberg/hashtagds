@@ -39,22 +39,22 @@ main {
         opacity: 1;
     }
 
-    31%, 34% {opacity: 0.1;}
+    31%, 34% {opacity: 0.6;}
 
     35%, 65% {
         background-image: url(../img/banner/hash.jpg);
         opacity: 1;
     }
 
-    66%, 69% {opacity: 0.1;}
+    66%, 69% {opacity: 0.6;}
 
-    70%, 95% {
+    70%, 97% {
         background-image: url(../img/banner/escola-digital.jpg);
         opacity: 1;
     }
     
-    96%, 100% {
-        opacity: 0.1;
+    98%, 100% {
+        opacity: 0.6;
     }
 }
 
