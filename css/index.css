@@ -81,6 +81,7 @@ main {
 .cursos .box-curso {
     background-color: rgba(211, 234, 250, 0.267);
     margin-bottom: 1em;
+    border-radius: 10px;
 }
 
 .cursos .box-curso:hover {
