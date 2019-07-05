@@ -1,3 +1,10 @@
+footer {
+    background-color: #203141;
+}
+footer a {
+    color: rgb(234, 233, 232);
+}
+
 .logo-rodape {
     text-align: center;
     padding: 0px; 
@@ -9,8 +16,9 @@
 
 .autoria {
     text-align: center;
-    color: #203141;
+    color: rgb(234, 233, 232);
     padding: 0px;
+    padding-bottom: 20px;
 }
 
 .contatos {
@@ -27,11 +35,6 @@
     width: 100%;
     height: 100%;
     border: 0px;
-}
-
-
-footer {
-    background-color: rgb(234, 233, 232);
 }
 
 @media screen and (min-width: 600px) {
