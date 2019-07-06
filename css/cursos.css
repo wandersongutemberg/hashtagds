@@ -79,6 +79,10 @@ main img {
     padding:0px;
 }
 
+.espaco{
+    padding: 0px 7%;
+}
+
 .margem{margin-top:20px}
 
 @media screen and (min-width: 600px) and (max-width: 1200px){
@@ -144,7 +148,7 @@ main img {
     }
 
     .espaco{
-        padding:0px 15% 15px 15%;
+        padding:0px 7% 15px 7%;
     }
 
     .margem{margin-top:20px}
