@@ -43,9 +43,14 @@ main a{
 }
 
 main img {
-    /*height:150px;
-    width:auto;*/
+    /*height:150px;*/
     padding-bottom:15px;
+}
+
+@media screen and (max-width: 599px) {
+    main img {
+        width: 85%;
+    }
 }
 
 .icone{
