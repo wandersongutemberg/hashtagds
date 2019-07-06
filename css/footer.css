@@ -6,15 +6,6 @@ footer a, footer p, footer li {
     color: rgb(234, 233, 232);
 }
 
-.logo-rodape {
-    text-align: center;
-    padding: 0px; 
-}
-
-.logo-rodape img {
-    width: 80%;
-}
-
 .autoria {
     text-align: center;
     color: rgb(234, 233, 232);
@@ -47,18 +38,9 @@ footer a, footer p, footer li {
     .contatos img {
         width: 30%;
     }
-    
-    .logo-rodape img {
-        width: 50%;
-    }
 }
 
 @media screen and (min-width: 1000px) {
-
-    .logo-rodape img {
-        /* width: 300px; */
-        width: 25%;
-    }
 
     .contatos img {
         width: 65%;
