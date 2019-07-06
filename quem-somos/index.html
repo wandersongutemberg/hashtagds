@@ -62,29 +62,39 @@
     <!-- MENU HAMBURGER -->
     <header>
         <nav>
-            <input type="checkbox" id="bt-menu">
-            <label for="bt-menu">&#9776;</label>
-            <div class="menu">
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a>Cursos</a>
+            <div class="linha">
+                <div class="col-dg-2 col-dm-2 col-logo">
+                    <img src="../img/logos/pclogo.png" id="img-logo" alt="Logo #.NET - Digital School">
+                    <img src="../img/logos/complemento-logo.png" id="img-logo-complemento"
+                        alt="Logo #.NET - Digital School">
+                </div>
+                <div class="col-dg-10 col-dm-10 col-menu">
+                    <input type="checkbox" id="bt-menu">
+                    <label for="bt-menu">&#9776;</label>
+                    <div class="preenche"></div>
+                    <div class="menu">
                         <ul>
-                            <li><a href="#">Lógica de Programação</a></li>
-                            <li><a href="../cursos/web-design/">Fundamentos de Web Design I</a></li>
-                            <li><a href="#">Sistemas Operacionais</a></li>
-                            <li><a href="#">Arquitetura e Organização de Computadores</a></li>
-                            <li><a href="#">Inglês Instrumental</a></li>
-                            <li><a href="#">Metodologia Científica</a></li>
+                            <li><a href="../">Início</a></li>
+                            <li id="li-curso"><a>Cursos</a>
+                                <ul>
+                                    <li><a href="#">Lógica de Programação</a></li>
+                                    <li><a href="../cursos/web-design/">Fundamentos de Web Design I</a></li>
+                                    <li><a href="#">Sistemas Operacionais</a></li>
+                                    <li><a href="#">Arquitetura e Organização de Computadores</a></li>
+                                    <li><a href="#">Inglês Instrumental</a></li>
+                                    <li><a href="#">Metodologia Científica</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./" id="selecionado">Quem somos?</a></li>
+                            <li><a href="../fale-conosco/">Fale conosco</a></li>
+                            <li><a href="../agradecimentos/">Agradecimentos</a></li>
                         </ul>
-                    </li>
-                    <li><a href="./" id="selecionado">Quem somos?</a></li>
-                    <li><a href="../#opinioes">Opiniões</a></li>
-                    <li><a href="../fale-conosco/">Fale conosco</a></li>
-                    <li><a href="../agradecimentos/">Agradecimentos</a></li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
+
     <!-- CONTEUDO DA PAGINA -->
     <main>
         <section>
@@ -117,7 +127,8 @@
                             </a>
                         </div>
                         <div class="col-dm-3 contatos-dev">
-                            <a href="http://linkedin.com/in/gledson-rodrigues-de-oliveira-junior-756203184/" target="_blank">
+                            <a href="http://linkedin.com/in/gledson-rodrigues-de-oliveira-junior-756203184/"
+                                target="_blank">
                                 <abbr title="LinkedIn">
                                     <img src="../img/contatos/linkedin-icon.png" alt="linkedin">
                                 </abbr>
