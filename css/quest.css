@@ -73,6 +73,19 @@ main img {
     padding:0px 7%;
 }
 
+.botaodir,
+.botaoesq {
+    width: 50%;
+}
+
+.botaodir{
+    text-align:right;
+}
+
+.botaoesq{
+    text-align:left;
+}
+
 @media screen and (min-width: 600px) {
     main img {width:50%}
 }
@@ -83,14 +96,6 @@ main img {
     .espacamento{
         margin-right:17%;
         margin-left:17%;
-    }
-
-    .botaodir{
-        text-align:right;
-    }
-
-    .botaoesq{
-        text-align:left;
     }
 
     .espaco{
