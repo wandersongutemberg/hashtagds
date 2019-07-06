@@ -24,6 +24,10 @@
     box-shadow: 2px 2px 3px lightskyblue;
 }
 
+.quem-somos p {
+    padding: 0px 5%;
+}
+
 .dev {
     background-color: white;
     box-sizing: border-box;
