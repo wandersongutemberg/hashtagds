@@ -88,9 +88,12 @@ label[for="bt-menu"] {
 }
 
 .menu a:hover, .selecionado {
-    color: rgb(209, 92, 20) !important;
     font-weight: bold;
     background-color: #dddddd;
+}
+
+.selecionado {
+    color: rgb(209, 92, 20) !important;
 }
 
 .menu a:hover {
