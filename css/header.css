@@ -79,7 +79,8 @@ label[for="bt-menu"] {
     border-top: .1px solid rgba(162, 165, 169, .8);
 }
 
-.menu ul li a {
+.menu ul li a,
+.menu ul li span {
     padding: 10px 10px 10px 40px;
     display: block;
     text-decoration: none;
@@ -88,7 +89,7 @@ label[for="bt-menu"] {
     font-size: 14px;
 }
 
-.menu a:hover, .selecionado {
+.menu a:hover, .selecionado, .menu span:hover {
     font-weight: bold;
     background-color: #dddddd;
 }
@@ -97,7 +98,7 @@ label[for="bt-menu"] {
     color: rgb(209, 92, 20) !important;
 }
 
-.menu a:hover {
+.menu a:hover, .menu span:hover {
     color: #368bda;
 }
 
@@ -186,7 +187,8 @@ label[for="bt-menu"] {
         width: 200px;
     }
 
-    .menu ul li a {
+    .menu ul li a,
+    .menu ul li span {
         text-align: center;
         padding: 10px;
     }
