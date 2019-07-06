@@ -93,6 +93,10 @@ label[for="bt-menu"] {
     background-color: #dddddd;
 }
 
+.menu a:hover {
+    color: #368bda;
+}
+
 .menu ul ul {
     position: static;
     overflow: hidden;

@@ -240,9 +240,32 @@ abbr {
 
     .equipe img {
         /* filter: grayscale(1); */
-        filter: opacity(0.6);
+        /* filter: opacity(0.6); */
         transition: all 0.3s;
         width: 50%;
+    }
+
+    #gledson-img {
+        content: url(../img/equipe/gledson-emoji.jpg);
+    }
+
+    #kelvin-img {
+        content: normal;
+    }
+
+    #nawan-img {
+        content: normal;
+    }
+
+    #wanderson-img {
+        content: normal;
+    }
+
+    #gledson-img:hover,
+    #kelvin-img:hover,
+    #nawan-img:hover,
+    #wanderson-img:hover {
+        content: normal;
     }
 
     .mais-comentarios {
