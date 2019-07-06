@@ -162,18 +162,21 @@ main img {
 .botao_navegacao {
     position: fixed;
     display: block;
-    padding: 20px;
+    /* padding: 20px; */
     color: #203141;
     background-color: rgba(211, 234, 250, 0.267);
     top: 50%;
     margin-top: -50px;
-    border-radius: 50px;
-    width: 100px;
-    height: 100px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .botao_navegacao:hover {
     background-color: rgba(211, 234, 250, 1);
+    margin-top: -60px;
+    width: 70px;
+    height: 70px;
 }
 
 .bt_nav_voltar {
@@ -182,4 +185,16 @@ main img {
 
 .bt_nav_avancar {
     right: 0px;
+}
+
+.bt_nav_voltar img,
+.bt_nav_avancar img {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.bt_nav_voltar img:hover,
+.bt_nav_avancar img:hover {
+    opacity: 1;
 }
