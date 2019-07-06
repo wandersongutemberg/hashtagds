@@ -246,7 +246,7 @@ abbr {
     }
 
     #kelvin-img {
-        content: normal;
+        content: url(../img/equipe/kelvin-emoji.jpg);
     }
 
     #nawan-img {
@@ -254,7 +254,7 @@ abbr {
     }
 
     #wanderson-img {
-        content: normal;
+        content: url(../img/equipe/wanderson-emoji.jpg);
     }
 
     #gledson-img:hover,

@@ -4,6 +4,7 @@
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #203141;
+    font-family: 'Prompt', sans-serif;
 }
 
 /* MENU */
@@ -88,9 +89,12 @@ label[for="bt-menu"] {
 }
 
 .menu a:hover, .selecionado {
-    color: rgb(209, 92, 20) !important;
     font-weight: bold;
     background-color: #dddddd;
+}
+
+.selecionado {
+    color: rgb(209, 92, 20) !important;
 }
 
 .menu a:hover {

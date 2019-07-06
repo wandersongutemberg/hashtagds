@@ -29,6 +29,10 @@ section {
     margin-bottom: 8%;
 }
 
+.fale-conosco p {
+    padding: 0px 7%;
+}
+
 @media screen and (min-width:600px) {
     .faq, .form {
         margin: 1% 4.17%;
