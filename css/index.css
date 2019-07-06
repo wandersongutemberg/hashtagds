@@ -254,7 +254,7 @@ abbr {
     }
 
     #nawan-img {
-        content: normal;
+        content: url(../img/equipe/nawan-emoji.jpg);
     }
 
     #wanderson-img {
