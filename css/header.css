@@ -82,7 +82,7 @@ label[for="bt-menu"] {
     padding: 10px 10px 10px 40px;
     display: block;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 14px;
 }
@@ -116,38 +116,30 @@ label[for="bt-menu"] {
 }
 
 #bt-menu:checked~.menu {
-    margin-top: 55px;
+    margin-top: 0px;
 }
 
 .selecionado {
     font-weight: bold;
-    /* text-decoration: underline; */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
 
-    nav .col-logo {
-        text-align: center;
-        padding: 0px;
-        background-color: white;
-        height: 60px;;
-    }
-
-    nav #img-logo {
-        width: 100px;
-        display: inline-block;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    nav {
-        /* background: white; */
+    nav .col-menu #logo-mobile {
+        display: none;
     }
 
     nav .col-logo {
         text-align: right;
         padding: 0px;
+        background-color: white;
+        height: 60px;
+    }
+
+    nav #img-logo {
+        float: left;
+        /* width: 100px; */
+        display: inline-block;
     }
 
     nav .col-menu {
@@ -155,8 +147,8 @@ label[for="bt-menu"] {
     }
     
     nav #img-logo {
-        width: 100px;
-        margin-right: -22px;
+        /* width: 100px; */
+        /* margin-right: -22px; */
     }
 
     nav #img-logo-complemento {
@@ -177,11 +169,11 @@ label[for="bt-menu"] {
     .menu {
         border-top: 1px solid rgb(32, 49, 65);
         margin: 0px 0px;
-        height: 42px;
+        height: 43px;
     }
 
     .menu>ul>li {
-        width: 190px;
+        width: 150px;
         float: left;
         text-align: center;
     }
@@ -207,4 +199,12 @@ label[for="bt-menu"] {
     .menu ul li ul li a {
         padding: 9px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .menu ul li {
+        width: 190px;
+    }
+    
 }

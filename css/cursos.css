@@ -149,3 +149,28 @@ main img {
 
     .margem{margin-top:20px}
 }
+
+.botao_navegacao {
+    position: fixed;
+    display: block;
+    padding: 20px;
+    color: #203141;
+    background-color: rgba(211, 234, 250, 0.267);
+    top: 50%;
+    margin-top: -50px;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.botao_navegacao:hover {
+    background-color: rgba(211, 234, 250, 1);
+}
+
+.bt_nav_voltar {
+    left: 0px;
+}
+
+.bt_nav_avancar {
+    right: 0px;
+}
