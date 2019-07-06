@@ -11,7 +11,8 @@ main {
     /* border: 3px solid black; */
     margin: 35px auto 20px auto; 
     background-size: 100% 100%;
-    animation: banner 15s infinite;
+    animation: banner 13s infinite;
+    box-shadow: 0px 0px 4px gray;
 }
 
 @media screen and (min-width: 600px) {
@@ -47,12 +48,12 @@ main {
 
     31%, 34% {opacity: 0.7;}
 
-    35%, 65% {
+    35%, 55% {
         background-image: url(../img/banner/hash.jpg);
         opacity: 1;
     }
 
-    66%, 97% {
+    56%, 97% {
         background-image: url(../img/banner/escola-digital.jpg);
         opacity: 1;
     }
