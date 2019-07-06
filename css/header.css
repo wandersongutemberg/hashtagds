@@ -87,8 +87,8 @@ label[for="bt-menu"] {
     font-size: 14px;
 }
 
-.menu a:hover, #selecionado {
-    color: rgb(209, 92, 20);
+.menu a:hover, .selecionado {
+    color: rgb(209, 92, 20) !important;
     font-weight: bold;
     background-color: #dddddd;
 }
@@ -119,7 +119,7 @@ label[for="bt-menu"] {
     margin-top: 55px;
 }
 
-#selecionado {
+.selecionado {
     font-weight: bold;
     /* text-decoration: underline; */
 }
