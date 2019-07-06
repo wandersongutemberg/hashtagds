@@ -191,7 +191,7 @@ main img {
 .bt_nav_avancar img {
     width: 100%;
     border-radius: 50%;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .bt_nav_voltar img:hover,
