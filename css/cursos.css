@@ -43,8 +43,8 @@ main a{
 }
 
 main img {
-    height:150px;
-    width:auto;
+    /*height:150px;
+    width:auto;*/
     padding-bottom:15px;
 }
 
@@ -87,10 +87,10 @@ main img {
         height:300px;
     }
 
-    main img {
+    /*main img {
         height:250px;
         width:auto;
-    }
+    }*/
 
     .icone{
         width:60px;
@@ -121,10 +121,10 @@ main img {
     }
     main h3{text-align:center}
 
-    main img {
+    /*main img {
         height:260px;
         width:auto
-    }
+    }*/
 
     .icone{
         width:40px;
