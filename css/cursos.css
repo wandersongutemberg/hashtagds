@@ -43,7 +43,8 @@ main a{
 }
 
 main img {
-    width:80%;
+    height:200px;
+    width:auto;
     padding-bottom:15px;
 }
 
@@ -51,7 +52,7 @@ main img {
     width:45px;
     height:45px;
     border-radius:25%;
-    box-shadow:-1px 1px 2px 1px rgba(209, 80, 2, 0.8);
+    box-shadow:-1px 1px 2px 1px #203141;
     padding:0px;
 }
 
@@ -86,7 +87,10 @@ main img {
         height:300px;
     }
 
-    main img {width:50%}
+    main img {
+        height:250px;
+        width:auto;
+    }
 
     .icone{
         width:60px;
@@ -117,7 +121,10 @@ main img {
     }
     main h3{text-align:center}
 
-    main img {width:30%}
+    main img {
+        height:260px;
+        width:auto
+    }
 
     .icone{
         width:40px;
