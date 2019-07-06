@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Questionário - #.NET</title>
+    <script>
+        g_gabarito = [1,4,2,3,3]
+        g_respostas = []
+        function lerDados() {
+            nroQuestoes = localStorage.getItem("nroQuestoes");
+            for (i=0; i<nroQuestoes; i++) {
+                g_respostas[i] = parseInt(localStorage.getItem("questao"+(i+1)));
+                //document.write("Questão "+(i+1)+": "+g_respostas[i]+"<br>")
+            }
+            conferirGabarito()
+        }
+        function conferirGabarito() {
+            acertos = 0;
+            for (i=0; i<g_gabarito.length; i++) 
+              if (g_gabarito[i] == g_respostas[i]) acertos++;
+            aproveitamento = (acertos/g_gabarito.length)*100;
+            document.getElementById("msgAproveitamento").innerHTML = "Seu aproveitamento foi de "+aproveitamento+"%"
+            if (aproveitamento >= 60) {
+              document.getElementById("msgProximoPasso").innerHTML = "Favor inserir o seu nome abaixo para emissão do certificado."
+              document.getElementById("formNome").style.visibility = "visible"
+            }
+            else {
+              document.getElementById("msgProximoPasso").innerHTML = "Volte às questões e tente novamente. O certificado só é emitido para aproveitamento igual ou superior a 60%."  
+            }
+        }
+        function emitirCertificado() {
+          localStorage.setItem("nomeUser",document.getElementById("nomeUser").value)
+          window.open("exibirCertificado.html","_self")
+        }
+    </script>
+</head>
+<body onload="lerDados()">
+  <p id="msgAproveitamento">a</p>
+  <p id="msgProximoPasso">b</p>
+  <form id="formNome" style="visibility: hidden">
+    <label>Nome:</label>
+    <input type="text" id="nomeUser" maxlength="35">
+    <input type="button" value="Gerar certificado" onclick="emitirCertificado()">
+  </form>    
+</body>
+</html>

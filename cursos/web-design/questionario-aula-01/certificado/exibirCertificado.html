@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      p {
+        position: absolute;
+        top:235px;
+        width: 625px;
+        text-align: center;
+        left: 95px;
+        font-size: 40px;
+      }
+    </style>
+    <script>
+      function posicionarNome() {
+        nomeUser = localStorage.getItem("nomeUser")
+        document.getElementById("nomeUser").innerHTML = nomeUser
+      }
+    </script>
+</head>
+<body onload="posicionarNome()">
+    <p id="nomeUser"></p>
+    <img src="imagens/certificado.png">
+</body>
+</html>
