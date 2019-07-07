@@ -24,7 +24,7 @@ section {
 
 .faq, .form {
     background-color: white;
-    box-shadow: 0px 0px 2px lightskyblue;
+    box-shadow: 0px 0px 2px skyblue;
     box-sizing: border-box;
     margin-bottom: 8%;
 }
@@ -54,9 +54,10 @@ section {
  text-align: left; 
 }
 
-input, select {
+select {
  width: 100%;
- 
+ height: 35px;
+ background-color: ghostwhite;
 }
 
 .caixaform {
@@ -65,12 +66,14 @@ input, select {
 
 textarea {
  width: 100%;
- height: 100px;
+ height: 85px;
  max-width: 100%;
+ background-color: ghostwhite;
 }
 
 .botoes{
-    padding: 0px;
+    padding: 0px 20px;
+    width: 50%;
 }
 
 p {
@@ -78,5 +81,60 @@ p {
 }
 
 fieldset {
-    border: 1px solid #ccc;
+    border: none;
+}
+.perguntas{
+    margin: 0px 0px 15px 0px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.perguntasfinal{
+    border-bottom: none;
+    
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    background-color: ghostwhite;
+    border: 1px solid #ddd;
+    border-top: 2px solid #d0d0d0;
+    border-left: 2px solid #d0d0d0;
+}
+
+.divform{
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+}
+
+.mensagem{
+    margin-bottom: 20px;
+    padding: 0px;
+    margin: 20px 2px 15px 2px;
+}
+
+.divbotoes{
+    padding: 0px;
+}
+
+.inputbotao {
+    background-color: rgba(209, 80, 2, 0.8);
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: white;
+    box-shadow: -1px 1px 2px 1px #203141;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+}
+
+.dir{
+    float: right;
+    }
+.esq{
+float: left;
 }

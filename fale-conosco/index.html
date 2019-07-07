@@ -107,7 +107,7 @@
                 <h1 class="centralizar">Fale conosco</h1>
                 <p>Nessa página você irá conseguir tirar todas as dúvidas sobre os nossos cursos e ter um contato direto
                     com a equipe #.NET de uma forma simples e prática. Nos empenhamos para entregar a melhor experiência
-                    do mercado. </p>
+                    de aprendizado. Fique à vontade para perguntar o que quiser!</p>
             </div>
         </article>
 
@@ -116,52 +116,74 @@
             <article class="col-dg-5 col-dm-5 faq centralizar">
                 <h3 class="centralizar">Principais Dúvidas (FAQ)</h3>
                 <img src="../img/faq-icon-orange.png" alt="faq">
-
-                <h4> Como faço para acessar os cursos? </h4>
-                <p> Para acessar os cursos basta clicar ir em "Cursos", clicar no que mais te agrada e começar a fazer
-                    as aulas específicas de cada curso. Os cursos estão disponível 24 horas por dia, 7 dias por semana.
-                </p><br>
+                
+                <div class="perguntas">
+                    <h4> Como faço para acessar os cursos? </h4>
+                    <p> Para acessar os cursos basta clicar em "Cursos" no "Menu", escolher o que te agrada e começar a fazer
+                        as aulas específicas de cada curso. Eles estão disponível 24 horas por dia, 7 dias por semana.
+                    </p>
+                </div>
+                
+                <div class="perguntas">
                 <h4> Como consigo material adicional? </h4>
-                <p> O material adicional de cada curso se encontra logo após da vídeo aula de cada curso, basta clicar
-                    no link indicado e fazer o download do material.</p><br>
+                <p> O material adicional de cada curso se encontra ao lado da vídeo aula do curso, basta clicar
+                    no link correspondente e fazer o download do material.</p>
+                </div>
+
+                <div class="perguntas">
                 <h4> Como consigo certificados dos cursos? </h4>
                 <p> O certificado pode ser impresso logo após a conclusão de cada curso. Assista o curso, responda os
-                    exercícios e logo após clique em "Gerar certificado". Pronto, seu certificado foi criado. </p><br>
-                <h4> Qual a idade mínima para fazer os cursos? Devo ter que escolaridade? </h4>
+                    exercícios e logo após clique em "Gerar certificado". Pronto, seu certificado foi criado. </p>
+                </div>
+                
+                <div class="perguntas">
+                    <h4> Qual a idade mínima para fazer os cursos? Devo ter que escolaridade? </h4>
                 <p> Não há idade mínima ou escolaridade exigida nesses cursos. Os cursos são didáticos e qualquer pessoa
-                    pode faze-lô. </p><br>
+                    pode faze-lô. </p>
+                </div>
+
+                <div class="perguntasfinal">
                 <h4> Os orientadores podem me auxiliar em dúvidas sobre o curso ou material?</h4>
                 <p> Claro, basta entrar em contato com orientador através das nossas redes de contato. Ou mesmo com o
                     questionário ao lado. Estamos sempre a disposição para atende-lô. </p>
-
+                </div>
 
             </article>
 
             <article class="col-dg-5 col-dm-5 form centralizar">
                 <h3 class="centralizar">Ainda com dúvidas? Envie para nosso time.</h3>
                 <img src="../img/opinioes.png" alt="fale conosco">
-
+                
                 <form>
                     <fieldset class="textoform">
                         <legend>
-                            <h4>Nós te ajudamos</h4>
+                            <h4>Prossiga com seus dados e sua dúvida!</h4>
                         </legend>
 
                         <div class="caixaform">
-                            <label for="nome">Nome *</label><br>
-                            <input type="text" name="nome" id="nome" required>
-                            <br><br>
-                            <label for="email">Email *</label><br>
-                            <input type="email" name="email" id="email" required>
-                            <br><br>
-                            <label for="telefone">Telefone para contato *</label><br>
+                            <div class="col-dg-12 col-dm-12 divform">
+                                <label for="nome"><p>Nome *</p></label>
+                                <input type="text" name="nome" id="nome" required>
+                            </div>
+
+                            <div class="col-dg-12 col-dm-12 divform">
+                                <label for="email"><p>Email *</p></label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+
+                            <div class="col-dg-12 col-dm-12 divform">
+                            <label for="telefone"><p>Telefone para contato *</p></label>
                             <input type="tel" name="telefone" id="telefone" required>
-                            <br><br>
-                            <label for="assunto">Assunto</label><br>
+                            </div>
+                            
+                            <div class="col-dg-12 col-dm-12 divform">
+                            <label for="assunto"><p>Assunto</label></p>
                             <input type="text" name="assunto" id="assunto">
-                            <br><br>
-                            Categoria<br>
-                            <select name="categoria" required>
+                            </div>
+                            
+                            <div>
+                            <label for="categoria"><p>Categoria</label></p>
+                            <select name="categoria" id="categoria" required>
                                 <option value="">Selecione uma categoria</option>
                                 <option value="logica">Cursos > Lógica de Programação</option>
                                 <option value="fundamentos">Cursos > Fundamentos de Web Design 1</option>
@@ -173,19 +195,21 @@
                                 <option value="site">Site</option>
                                 <option value="sugestoes">Sugestões</option>
                             </select>
-
-                            <br><br>
-                            <label for="message">Mensagem *</label><br>
-                            <textarea name="message" id="message" required></textarea>
-                        </div>
-
-                        <div class="linha botoes">
-                            <div class="col-dg-6 col-dm-6">
-                                <input type="submit" value="Enviar">
                             </div>
 
-                            <div class="col-dg-6 col-dm-6">
-                                <input type="reset" value="Limpar">
+                            <div class="col-dg-12 col-dm-12 mensagem">
+                            <label for="message"><p>Mensagem *</p></label>
+                            <textarea name="message" id="message" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="linha divbotoes">
+                            <div class="col-dg-6 col-dm-6 botoes">
+                                <input class="inputbotao dir" type="submit" value="Enviar">
+                            </div>
+
+                            <div class="col-dg-6 col-dm-6 botoes">
+                                <input class="inputbotao esq" type="reset" value="Limpar">
                             </div>
 
                         </div>
