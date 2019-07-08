@@ -141,7 +141,7 @@ label[for="bt-menu"] {
     }
 
     nav #img-logo {
-        float: left;
+        float:left;
         /* width: 100px; */
         display: inline-block;
     }
@@ -150,10 +150,10 @@ label[for="bt-menu"] {
         background-color: transparent;
     }
     
-    nav #img-logo {
-        /* width: 100px; */
-        /* margin-right: -22px; */
-    }
+    /* nav #img-logo {
+        width: 100px;
+        margin-right: -22px;
+    } */
 
     nav #img-logo-complemento {
         margin-top: 18px;
@@ -167,7 +167,7 @@ label[for="bt-menu"] {
 
     .preenche {
         background-color: white;
-        height: 18px;;
+        height: 18px;
     }
 
     .menu {

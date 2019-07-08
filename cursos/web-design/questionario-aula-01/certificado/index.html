@@ -1,46 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Resultado do Questionário - #.NET</title>
-    <script>
-        g_gabarito = [3,2,4,2,1]
-        g_respostas = []
-        function lerDados() {
-            nroQuestoes = localStorage.getItem("nroQuestoes");
-            for (i=0; i<nroQuestoes; i++) {
-                g_respostas[i] = parseInt(localStorage.getItem("questao"+(i+1)));
-                //document.write("Questão "+(i+1)+": "+g_respostas[i]+"<br>")
-            }
-            conferirGabarito()
-        }
-        function conferirGabarito() {
-            acertos = 0;
-            for (i=0; i<g_gabarito.length; i++) 
-              if (g_gabarito[i] == g_respostas[i]) acertos++;
-            aproveitamento = (acertos/g_gabarito.length)*100;
-            document.getElementById("msgAproveitamento").innerHTML = "Seu aproveitamento foi de "+aproveitamento+"%"
-            if (aproveitamento >= 60) {
-              document.getElementById("msgProximoPasso").innerHTML = "Favor inserir o seu nome abaixo para emissão do certificado."
-              document.getElementById("formNome").style.visibility = "visible"
-            }
-            else {
-              document.getElementById("msgProximoPasso").innerHTML = "Volte às questões e tente novamente. O certificado só é emitido para aproveitamento igual ou superior a 60%."  
-            }
-        }
-        function emitirCertificado() {
-          localStorage.setItem("nomeUser",document.getElementById("nomeUser").value)
-          window.open("../../../exibirCertificado.html","_self")
-        }
-    </script>
+  <title>Resultado do Questionário - #.NET</title>
+  <meta name="description" content="Certificado da primeira aula do curso de Fundamentos de Web Design I">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Gledson Rodrigues de Oliveira Junior,
+        Kelvin Arruda Silva,
+        Nawan Soares Novais,
+        Wanderson Gutemberg Teotonio Silva">
+  <meta name="reply-to" content="hashtagds.net@gmail.com">
+  <meta name="robots" content="noindex,follow,noarchive">
+
+  <!-- Favicon - inicio -->
+  <link rel="apple-touch-icon" sizes="57x57" href="../../../../img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../../../img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../../../img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../../../img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../../../img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../../../img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../../../img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../../../img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../../../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../../../img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../../../../img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon - fim -->
+
+  <!-- FONTE (GOOGLE FONTS) -->
+  <link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+
+  <!-- CSS - inicio -->
+  <link rel="stylesheet" href="../../../../css/resson.css" type="text/css">
+  <link rel="stylesheet" href="../../../../css/header.css" type="text/css">
+  <link rel="stylesheet" href="../../../../css/footer.css" type="text/css">
+  <link rel="stylesheet" href="../../../../css/certificado.css" type="text/css">
+  <!-- CSS - fim -->
+
+  <!-- JS -->
+  <script>
+    g_gabarito = [3, 2, 4, 2, 1]
+    g_respostas = []
+    function lerDados() {
+      nroQuestoes = localStorage.getItem("nroQuestoes");
+      for (i = 0; i < nroQuestoes; i++) {
+        g_respostas[i] = parseInt(localStorage.getItem("questao" + (i + 1)));
+        //document.write("Questão "+(i+1)+": "+g_respostas[i]+"<br>")
+      }
+      conferirGabarito()
+    }
+    function conferirGabarito() {
+      acertos = 0;
+      for (i = 0; i < g_gabarito.length; i++)
+        if (g_gabarito[i] == g_respostas[i]) acertos++;
+      aproveitamento = (acertos / g_gabarito.length) * 100;
+      document.getElementById("msgAproveitamento").innerHTML = "Seu aproveitamento foi de " + aproveitamento + "%"
+      if (aproveitamento >= 60) {
+        document.getElementById("msgProximoPasso").innerHTML = "Favor inserir o seu nome abaixo para emissão do certificado."
+        document.getElementById("formNome").style.visibility = "visible"
+      }
+      else {
+        document.getElementById("msgProximoPasso").innerHTML = "Volte às questões e tente novamente. O certificado só é emitido para aproveitamento igual ou superior a 60%."
+      }
+    }
+    function emitirCertificado() {
+      localStorage.setItem("nomeUser", document.getElementById("nomeUser").value)
+      window.open("../../../exibirCertificado.html", "_self")
+    }
+  </script>
 </head>
+
 <body onload="lerDados()">
-  <p id="msgAproveitamento">a</p>
-  <p id="msgProximoPasso">b</p>
-  <form id="formNome" style="visibility: hidden">
-    <label>Nome:</label>
-    <input type="text" id="nomeUser" maxlength="60">
-    <input type="button" value="Gerar certificado" onclick="emitirCertificado()">
-  </form>    
+  <header>
+    <nav>
+      <div class="linha">
+        <!--<div class="col-dg-2 col-logo">
+                <a href="./"><img src="img/logos/logo-menu.png" id="img-logo" alt="Logo #.NET - Digital School"></a>
+                <img src="img/logos/complemento-logo.png" id="img-logo-complemento"
+                    alt="Logo #.NET - Digital School">
+            </div>-->
+        <div class="col-dg-12 col-dm-12 col-menu">
+          <a href="../../../"><img id="logo-mobile" src="../../../../img/logos/logo-mobile.png"
+              alt="Logo #.NET - Digital School"></a>
+          <a href="../../../"><img src="../../../../img/logos/logo-menu.png" id="img-logo"
+              alt="Logo #.NET - Digital School"></a>
+          <input type="checkbox" id="bt-menu">
+          <label for="bt-menu">&#9776;</label>
+          <div class="preenche"></div>
+          <div class="menu">
+            <ul>
+              <li><a href="../../../../">Início</a></li>
+              <li id="li-curso"><a id="selecionado">Cursos</a>
+                <ul>
+                  <li><a href="../../../logica-de-programacao/">Lógica de
+                      Programação</a></li>
+                  <li><a href="../../">Fundamentos de Web Design I</a></li>
+                  <li><a href="../../../sistemas-operacionais/">Sistemas
+                      Operacionais</a></li>
+                  <li><a href="../../../arquitetura-e-organizacao-de-computadores/">Arquitetura
+                      e Organização de
+                      Computadores</a></li>
+                  <li><a href="../../../ingles-instrumental/">Inglês
+                      Instrumental</a></li>
+                  <li><a href="../../../metodologia-cientifica/">Metodologia
+                      Científica</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../quem-somos/">Quem somos?</a></li>
+              <li><a href="../../../../fale-conosco/">Fale conosco</a></li>
+              <li><a href="../../../../agradecimentos/">Agradecimentos</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTEUDO -->
+  <main>
+    <div class="linha">
+      <div class="col-dg-12">
+        <div id="certificado">
+          <p id="msgAproveitamento"></p>
+          <p id="msgProximoPasso"></p>
+          <form id="formNome" style="visibility: hidden">
+            <label>Nome:</label>
+            <input type="text" id="nomeUser" maxlength="60">
+            <input type="button" value="Gerar certificado" onclick="emitirCertificado()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--RODAPE-->
+  <footer class="linha">
+    <!-- CONTATOS -->
+    <div class="col-dm-12 col-dg-3">
+      <div class="linha centralizar">
+        <p>Contatos:</p>
+        <div class="col-dm-12 col-dg-6 contatos">
+          <a href="mailto:hashtagds.net@gmail.com" target="_blank">
+            <abbr title="Email">
+              <img src="../../../../img/contatos/email.png" alt="email">
+            </abbr>
+          </a>
+        </div>
+        <div class="col-dm-12 col-dg-6 contatos">
+          <a href="https://www.youtube.com/channel/UCwHvG9lSwCbZDNrRViGLaiA" target="_blank">
+            <abbr title="YouTube">
+              <img src="../../../../img/contatos/youtube-icon.png" alt="youtube">
+            </abbr>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- MAPA DO SITE -->
+    <div class="col-dm-12 col-dg-6">
+      <div class="linha">
+        <p class="centralizar">Mapa do site:</p>
+        <div class="col-dm-4 col-dg-4">
+          <ul>
+            <li><a href="../../../../">Início</a></li>
+            <li><a href="#">Opiniões</a></li>
+            <li><a href="#">Fale conosco</a></li>
+            <li><a href="../../../../agradecimentos/">Agradecimentos</a></li>
+          </ul>
+        </div>
+        <div class="col-dm-4 col-dg-4">
+          <ul>
+            <li><a href="../../../../quem-somos/">Quem somos?</a>
+              <ul>
+                <li><a href="../../../../quem-somos/">#.NET</a></li>
+                <li><a href="../../../../quem-somos/#gledson">Gledson</a>
+                </li>
+                <li><a href="../../../../quem-somos/#kelvin">Kelvin</a>
+                </li>
+                <li><a href="../../../../quem-somos/#nawan">Nawan</a></li>
+                <li><a href="../../../../quem-somos/#wanderson">Wanderson</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-dm-4 col-dg-4">
+          <ul>
+            <li><a href="../../../">Cursos</a>
+              <ul>
+                <li><a href="../../../logica-de-programacao/">Lógica de
+                    Programação</a></li>
+                <li><a href="../../">Fundamentos de Web Design I</a></li>
+                <li><a href="../../../sistemas-operacionais/">Sistemas
+                    Operacionais</a></li>
+                <li><a href="../../../arquitetura-e-organizacao-de-computadores/">Arquitetura
+                    e Organização de
+                    Computadores</a></li>
+                <li><a href="../../../ingles-instrumental/">Inglês
+                    Instrumental</a></li>
+                <li><a href="../../../metodologia-cientifica/">Metodologia
+                    Científica</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- MAPA / NOS ENCONTRE -->
+    <div class="col-dm-12 col-dg-3">
+      <div class="linha">
+        <p class="centralizar">
+          Onde estamos:
+        </p>
+        <div class="col-dm-12 col-dg-12">
+          <iframe class="mapa-rodape"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.9669565861295!2d-48.28227848454829!3d-18.932856687170176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444e28f2d7a11%3A0x8fa16020966235f9!2sIFTM+Campus+Uberl%C3%A2ndia+Centro!5e0!3m2!1spt-BR!2sbr!4v1561518588543!5m2!1spt-BR!2sbr"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- DIREITOS RESERVADOS -->
+    <div class="col-dm-12 col-dg-12 autoria">
+      Todos os direitos reservados
+    </div>
+  </footer>
 </body>
+
 </html>
